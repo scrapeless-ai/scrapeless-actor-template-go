@@ -25,7 +25,6 @@ func main() {
 	proxy, err := sl.Proxy.Proxy(context.TODO(), proxy2.ProxyActor{
 		Country:         "us",
 		SessionDuration: 10,
-		Gateway:         "gw-us.scrapeless.io:8789",
 	})
 	if err != nil {
 		panic(err)
